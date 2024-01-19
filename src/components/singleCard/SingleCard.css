@@ -1,0 +1,46 @@
+.card {
+    width: 300px;
+}
+.card-image {
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cardButtonWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modelWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.modelImageWrapper {
+    margin-bottom: 20px;
+}
+
+.modelImageWrapper img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.modelContentWrapper p span {
+    font-weight: 700;
+    font-size: 15px;
+}
+.contentStyle {
+    margin: 0;
+    height: 160px;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    background-color: #364d79;
+}
+
+.ant-modal-content {
+    margin-top: -80px;
+}
