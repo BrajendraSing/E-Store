@@ -6,7 +6,7 @@
 * React
     * Redux
     * React-Routing
-    * React-Thunk
+    * Redux-Thunk
     * React-Icon
 * Ant Design
 * Platzi Fake Store API
