@@ -1,15 +1,20 @@
 import "./SingleCard.css";
 import React, { useState } from "react";
-import { Button, Card, Modal, Carousel } from "antd";
+import { Button, Card, Modal, Carousel, message } from "antd";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartSlice/CartSlice";
 const { Meta } = Card;
 
 function SingleCard({ product }) {
-    const dispatch = useDispatch();
 
+    const dispatch = useDispatch();
+    const [messageApi, contextHolder] = message.useMessage();
     function clickHandler(p_product) {
         dispatch(addToCart(p_product));
+        messageApi.open({
+            type: 'success',
+            content: 'Added to cart',
+          });
     }
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,8 +30,8 @@ function SingleCard({ product }) {
 
     return (
         <>
+        {contextHolder}
             <Card
-                
                 className="card"
                 hoverable
                 cover={
@@ -44,6 +49,7 @@ function SingleCard({ product }) {
                 />
                 <div className="cardButtonWrapper">
                     <h3>Price: ₹{product.price}</h3>
+
                     <Button
                         type="primary"
                         size="middle"
