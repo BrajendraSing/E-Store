@@ -17,7 +17,7 @@ function Content() {
     const initialProducts = slice(products, 0, index);
 
     // Getting url parameter
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const urlCategory = searchParams.get("category");
 
     // Resetting load more button on url change

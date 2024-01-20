@@ -58,7 +58,8 @@ function Header() {
             navigate("/");
             dispatch(restoreProductLists());
         } else {
-            navigate("/?category=" + e.key);
+            // navigate("/?category=" + e.key);
+            setSearchParams({category:e.key})
         }
     };
 
