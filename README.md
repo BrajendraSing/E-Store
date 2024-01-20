@@ -10,7 +10,7 @@
     * React-Icon
 * Ant Design
 * Platzi Fake Store API
-* lodash -> For load more button
+* lodash
 
 
 ## Features
