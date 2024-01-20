@@ -21,10 +21,10 @@ function Content() {
     const urlCategory = searchParams.get("category");
 
     // Resetting load more button on url change
-    useEffect(()=>{
+    useEffect(() => {
         setIndex(20);
         setIsCompleted(false);
-    },[urlCategory])
+    }, [urlCategory]);
 
     // Load more products on button click
     const loadMore = () => {
@@ -45,7 +45,6 @@ function Content() {
         }
     }, [status, dispatch]);
 
-    
     // Showing loading status while fetching products
     if (status === "loading") {
         return (
@@ -64,14 +63,13 @@ function Content() {
 
     return (
         <div className="contentContainer">
-        <div className="contentWrapper">
-            {products &&
-                initialProducts.map((item) => (
-                    <SingleCard product={item} key={item.id} />
-                ))}
-            
-        </div>
-        {isCompleted ? (
+            <div className="contentWrapper">
+                {products &&
+                    initialProducts.map((item) => (
+                        <SingleCard product={item} key={item.id} />
+                    ))}
+            </div>
+            {isCompleted ? (
                 <Button className="loadMoreBtn" disabled>
                     All Done
                 </Button>

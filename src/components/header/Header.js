@@ -58,12 +58,11 @@ function Header() {
             navigate("/");
             dispatch(restoreProductLists());
         } else {
-            // navigate("/?category=" + e.key);
-            setSearchParams({category:e.key})
+            navigate("/?category=" + e.key);
         }
     };
 
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const urlCategory = searchParams.get("category");
 
     useEffect(() => {
