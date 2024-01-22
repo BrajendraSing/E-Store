@@ -3,7 +3,7 @@
 # Live Project 
 https://brajendra-e-store.netlify.app/
 <br>or<br>
-<a href="https://brajendra-e-store.netlify.app/">Click Here</a> 
+<a href="https://brajendra-e-store.netlify.app/" target="_blank">Click Here</a> 
 
 ## Technologies
 * HTML
