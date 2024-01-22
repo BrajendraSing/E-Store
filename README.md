@@ -1,6 +1,8 @@
 # E-Store
 
-# Live Project - > https://brajendra-e-store.netlify.app/
+# Live Project 
+https://brajendra-e-store.netlify.app/
+or
 <a href="https://brajendra-e-store.netlify.app/">Click Here</a> 
 
 ## Technologies
